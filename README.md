@@ -5,12 +5,12 @@ This project is to get used to SpringBoot.
 
 * has successfully connected to mysql
 
-Note: 
-## Setup
+# Note: 
+* Setup
 1. make sure gradle-wrapper.properties version right to your local gradle version.
 2. remember some useful plugins and dependencies
 
-## Connect to mysql
+* Connect to mysql
 1. "com.mysql.jdbc.Driver" has deprecated, use "com.mysql.cj.jdbc.Driver"
 2. "Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 
    5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. 
