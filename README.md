@@ -11,7 +11,9 @@ This project is to get used to SpringBoot.
 2. remember some useful plugins and dependencies
 
 * Connect to mysql
-1. "com.mysql.jdbc.Driver" has deprecated, use "com.mysql.cj.jdbc.Driver"
+1. "com.mysql.jdbc.Driver" has deprecated, use "com.mysql.cj.jdbc.Driver", or it will
+   cause "java.sql.SQLException: Unknown system variable 'query_cache_size'"
+   
 2. "Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 
    5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. 
    For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. 
@@ -25,3 +27,5 @@ This project is to get used to SpringBoot.
    
    try jdbcUrl, append "?serverTimezone=UTC"
    
+4. if table primary key "id" does not choose "Auto increment", when insert data, there will
+   be "java.sql.SQLException: Field 'id' doesn't have a default value" 
