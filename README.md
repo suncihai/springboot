@@ -29,3 +29,10 @@ This project is to get used to SpringBoot.
    
 4. if table primary key "id" does not choose "Auto increment", when insert data, there will
    be "java.sql.SQLException: Field 'id' doesn't have a default value" 
+   
+5. jpa inbuilt find method will return "javax.persistence.NonUniqueResultException: query did not return a unique 
+   result" if your result is more than one than expected
+   
+6. when use delete method in jpa, have to add @Modifying and @Transactional, or there will be 
+   "javax.persistence.TransactionRequiredException: No EntityManager with actual transaction available for current 
+   thread - cannot reliably process 'remove' call"

@@ -16,12 +16,24 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 repositories {
+    maven { url " mvnrepository.com/artifact/com.amazonaws/aws-java-sdk" }
     mavenCentral()
+    jcenter()
+}
+
+allprojects {
+    apply plugin: 'idea'
+    idea {
+        module {
+            inheritOutputDirs = true
+        }
+    }
 }
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-rest")
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
     compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.11'
+    compile('net.sf.json-lib:json-lib:2.4:jdk15')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
