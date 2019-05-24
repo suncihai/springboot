@@ -23,7 +23,7 @@ This project is to get used to SpringBoot.
    try jdbcUrl, append "?autoReconnect=true&useSSL=false"
 3. "java.sql.SQLException: The server time zone value 'xxxx' is unrecognized or represents more than one time zone. 
    You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more 
-   specifc time zone value if you want to utilize time zone support"
+   specific time zone value if you want to utilize time zone support"
    
    try jdbcUrl, append "?serverTimezone=UTC"
    
@@ -36,3 +36,6 @@ This project is to get used to SpringBoot.
 6. when use delete method in jpa, have to add @Modifying and @Transactional, or there will be 
    "javax.persistence.TransactionRequiredException: No EntityManager with actual transaction available for current 
    thread - cannot reliably process 'remove' call"
+
+* Debug
+1. build.gradle sometimes has weird bugs, compile group swagger does not work but compile swagger work.
