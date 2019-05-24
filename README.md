@@ -36,6 +36,9 @@ This project is to get used to SpringBoot.
 6. when use delete method in jpa, have to add @Modifying and @Transactional, or there will be 
    "javax.persistence.TransactionRequiredException: No EntityManager with actual transaction available for current 
    thread - cannot reliably process 'remove' call"
+   
+* HttpRequest
+1. use RequestContextHolder to solve thread safety problem. It is also used to save users' session.
 
 * Debug
 1. build.gradle sometimes has weird bugs, compile group swagger does not work but compile swagger work.
