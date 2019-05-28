@@ -15,19 +15,11 @@ public class User {
    @Column(nullable = false)
     private Integer age;
 
-   @Column(nullable = false)
-    private String username;
-
-   @Column(nullable = false)
-    private String password;
-
    public User(){}
 
     public User(String name, Integer age, String username, String password) {
         this.name = name;
         this.age = age;
-        this.username = username;
-        this.password = password;
     }
 
     public Long getId() {
@@ -52,22 +44,6 @@ public class User {
 
     public void setAge(Integer age) {
         this.age = age;
-    }
-
-    public String getUserName() {
-        return username;
-    }
-
-    public void setUserName(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
 }
