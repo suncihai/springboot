@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.api:gax-grpc:1.17.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.api/gax-grpc/1.17.0/acb0eeddc113dbb21e9681c421a298ebbc3e4211/gax-grpc-1.17.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.api/gax-grpc/1.17.0/bdbf5913324b95e4cc86e1afe3b1182fb82d958/gax-grpc-1.17.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

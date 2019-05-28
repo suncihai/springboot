@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.opencensus:opencensus-exporter-trace-stackdriver:0.12.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.opencensus/opencensus-exporter-trace-stackdriver/0.12.2/d19f86b61dadfe0f101fff0d002ffae3142c3519/opencensus-exporter-trace-stackdriver-0.12.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.opencensus/opencensus-exporter-trace-stackdriver/0.12.2/8763b21a50962895b6d02ab4b7db14bb47e0304c/opencensus-exporter-trace-stackdriver-0.12.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
