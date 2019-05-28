@@ -72,4 +72,37 @@ public class UserService {
         }
     }
 
+    public ApiResponse register(String username, String password) {
+        JSONObject response = new JSONObject();
+        User find = userRepository.findUser(username);
+        System.out.println(find);
+        if(find != null) {
+            return ApiResponse.createFailure(ApiCode.User.REGISTERFAILURE);
+        }
+
+        User user = new User();
+        user.setUserName(username);
+        user.setPassword(password);
+        response.put("name",user.getUserName());
+        response.put("age",user.getPassword());
+        userRepository.save(user);
+
+        return ApiResponse.createSuccess(ApiCode.User.ADDSUCCESS, response);
+    }
+
+    public ApiResponse login(String username, String password) {
+        JSONObject response = new JSONObject();
+        User find = userRepository.findUser(username);
+        System.out.println(find);
+        if(find != null) {
+            return ApiResponse.createFailure(ApiCode.User.LOGIN_USERNAME_FAILURE);
+        }
+
+        if(find.getPassword().equals(password)) {
+            return ApiResponse.createSuccess(ApiCode.User.ADDSUCCESS, response);
+        }else{
+            return ApiResponse.createFailure(ApiCode.User.LOGIN_PASSWORD_FAILURE);
+        }
+    }
+
 }
