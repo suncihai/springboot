@@ -19,7 +19,6 @@ public class SiteUserService {
     public ApiResponse register(String username, String password) {
         JSONObject response = new JSONObject();
         SiteUser find = siteUserRepository.findUser(username);
-        System.out.println(find);
         if(find != null) {
             return ApiResponse.createFailure(ApiCode.User.REGISTERFAILURE);
         }
@@ -37,7 +36,6 @@ public class SiteUserService {
     public ApiResponse login(String username, String password) {
         JSONObject response = new JSONObject();
         SiteUser find = siteUserRepository.findUser(username);
-        System.out.println(find);
         if(find != null) {
             return ApiResponse.createFailure(ApiCode.User.LOGIN_USERNAME_FAILURE);
         }

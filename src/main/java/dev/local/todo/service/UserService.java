@@ -37,7 +37,6 @@ public class UserService {
     public ApiResponse adduser(String name, Integer age) {
         JSONObject response = new JSONObject();
         User find = userRepository.findUser(name);
-        System.out.println(find);
         if(find != null) {
             return ApiResponse.createFailure(ApiCode.User.ADDFAILURE);
         }
